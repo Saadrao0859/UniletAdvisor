@@ -38,7 +38,7 @@ const Login = () => {
         <div className="forget-remember">
           <div className="remember-me">
             <Checkbox {...label} />
-            Remember Password?
+            Save Password for later?
           </div>
           <div className="forget-pass">Forgot Password?</div>
         </div>
