@@ -1,0 +1,82 @@
+.articles-main-box{
+    /* border: 1px solid black; */
+    margin: 10px 0px;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+}
+.banner-img-box{
+    background-color: #0c0c0c;
+    position: relative;
+    margin-bottom: 20px;
+}
+.banner-img-box .banner{
+    opacity: 60%;
+    cursor: pointer;
+}
+/* .banner-img-box .banner:hover{
+    opacity: 100%;
+} */
+.new-arivals{
+    width: 250px;
+    height: 150px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .header-one{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+    position: absolute;
+    left: 40%;
+    top: 110px;
+}
+.main-article-about{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.house-article-details{
+    flex: 1;
+    max-width: 380px;
+    border-radius: 10px 10px 2px 2px;
+    cursor: pointer;
+    padding: 0px 0px 5px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border-radius: 10px 10px 0px 0px; */
+}
+.house-article-details:hover{
+    transform: translate(-10px, -10px);
+    box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+}
+.house-article-details .image-article-p{
+    font-size: smaller;
+    /* margin-bottom: 7px; */
+}
+.image-artical-logo-box{
+    width: 40%;
+    margin-left: 10px;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.house-article-details .image-article-h3{
+    color: black;
+    margin-bottom: 7px;
+    margin-left: 15px;
+    text-align: left;
+}

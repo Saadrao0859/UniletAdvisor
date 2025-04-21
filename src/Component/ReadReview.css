@@ -1,0 +1,179 @@
+.read-main{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    font-size: 35px;
+    padding: 15px;
+    color: #0FB3AF;
+}
+.search-box{
+    /* border: 1px solid red; */
+    text-align: left;
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+}
+.txt{
+    p{
+        font-size: smaller;
+    }
+}
+.search-bar-parrent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.search-menu input{
+    outline: transparent;
+    width: 300px;
+    padding: 8px;
+}
+.search-menu .srh-btn{
+    padding: 10px 30px;
+    border: transparent;
+    background-color: #3C3C3B;
+    color: white;
+    cursor: pointer;
+}
+.search-menu .srh-btn:hover{
+    background-color: black;
+}
+.short-result{
+    display: flex;
+    /* justify-content: center; */
+    margin-right: 150px;
+    /* position: relative; */
+    p{
+        margin-top: 7px;
+    }
+
+}
+.short-result .Rectangle{
+    width: 80px;
+    border: transparent;
+    input{
+        padding: 10px;
+        border: transparent;
+        border: 1px solid #00000088;
+        outline: transparent;
+        margin-left: 5px;
+    }
+    
+}
+.img-btn-box{
+    height: 38px;
+    position: relative;
+    left: 102px;
+    top: -1px
+}
+.main-details-houses{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* houses css */
+
+
+
+.main-details-houses .house-box{
+    /* border: 1px solid red; */
+    flex: 1;
+    display: flex;
+    gap: 40px;
+}
+ .image-boxes{
+    /* border: 1px solid black; */
+    flex: 1;
+    border-radius: 10px 10px 2px 2px;
+    /* box-shadow: #00000040 0px 1px 10px, #00000038 0px 5px 10px; */
+    cursor: pointer;
+    max-width: fit-content;
+}
+ .image-boxes:hover{
+    transform: translate(-10px, -10px);
+    box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+}
+.house-box-lower{
+    margin-top: 50px;
+}
+.image-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.image-boxes .image-show{
+    flex: 4;
+    img{
+        border-radius: 8px 8px 0px 0px;
+    }
+}
+.image-boxes .text-show{
+    margin-left: 10px;
+    flex: 0.6;
+    padding-top: 3px;
+    text-align: left;
+    h5{
+        margin: 0px;
+    }
+}
+
+.image-boxes .rating-box{
+    /* border: 1px solid #f200ff; */
+    margin-left: 10px;
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+.rating-box .rating{
+    /* border: 1px solid red; */
+    flex: 1.5;
+    text-align: left;
+    img{
+        height: 33px;
+    }
+}
+.rating-box .location{
+    /* border: 1px solid green; */
+    flex: 1;
+    max-width: 60px;
+    img{
+        height: 44px;
+       
+    }
+}
+
+
+
+/* next and back css */
+
+
+
+.next-and-back{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    p{
+        padding: 10px 15px;
+        cursor: pointer;
+        /* margin-bottom: 20px; */
+    }
+    p:hover{
+        background-color: #0FB3AF;
+        color: white;
+        /* padding: 10px 15px; */
+        border-radius: 100px;
+    }
+}

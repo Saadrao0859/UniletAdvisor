@@ -1,0 +1,75 @@
+.login-main-container{
+    /* border: 1px solid black; */
+    width: 100%;
+    position: relative;
+}
+.banner-image{
+    /* border: 1px solid red; */
+    width: 100%;
+    .banner-img-login{
+        width: 100%;
+    }
+}
+.text-login-banner{
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+.login-main-container .login-box-input{
+    /* border: 1px solid black; */
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    h1{
+        color: black;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.inout-email{
+    width: 90%;
+    margin-bottom: 10px;
+}
+.password-input{
+    width: 90%;
+    margin-top: 20px;
+}
+.forget-remember{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.btn-login{
+    color: white !important;
+    margin-bottom: 20px;
+}
+.bottem-border{
+    width: 60%;
+    /* border: 1px solid black; */
+    margin: 20px auto;
+}
+.singupBtn{
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+.signupbutton{
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: large;
+    padding-bottom: 10px;
+    padding: 0px 15px ;
+}
+.signupbutton:hover{
+    color: #0FB3AF;
+}
