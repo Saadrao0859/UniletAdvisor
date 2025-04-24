@@ -128,10 +128,10 @@ const Home = () => {
         </div>
         <button className="get-st">Get Started</button>
       </div>
-      <div className="recent-review">
+      <div className="recently-review">
         <h2>Recently Reviewed</h2>
         <p>More then 10000 clients who are happy with Us. Are You Next One?</p>
-        <div className="house-box house-box-lower">
+        <div className="house-box">
           <div className="image-boxes">
             <div className="image-show">
               <img src={image9} alt="" />
@@ -180,8 +180,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="house-box house-box-lower">
           <div className="image-boxes">
             <div className="image-show">
               <img src={image12} alt="" />
@@ -234,11 +232,13 @@ const Home = () => {
         <button className="view-btn">View All</button>
       </div>
       <div className="our-articles">
-        <h1>Our Articles</h1>
+       <div>
+       <h1>Our Articles</h1>
         <p>
           See our latest news and updates for the know the new properties in
           your area.
         </p>
+       </div>
         <div className="big-house big-house-fst">
           <img src={house3} alt="house" />
           <div className="detail-fst">

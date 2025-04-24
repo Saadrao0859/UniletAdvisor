@@ -98,12 +98,14 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 65px;
-    left: 320px ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
     font-size: 20px;
 }
 .banner-txt h1{
     margin: 0px;
+    text-wrap: nowrap;
 }
 .banner-txt p{
     margin: 0px;
@@ -202,11 +204,12 @@
     }
   }
   
-/* .accomodation{
+.accomodation{
     width: 80%;
-    height: 300px;
-    padding: 10px;
-    gap: 5px;
+    min-width: 500px;
+    /* height: 300px; */
+    padding: 50px 10px;
+    gap: 53px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -341,38 +344,43 @@
 
 
 
-/* .work-container{
+.work-container{
     background-color: #FBFBFB;
-    box-shadow: #42454748 0px 8px 24px;
+    /* box-shadow: #42454748 0px 8px 24px; */
     width: 90%;
     margin: 0 auto;
     min-height: 820px;
-    padding: 10px;
+    padding: 2rem 1rem;
     text-align: center;
     h1{
         margin: 0;
         color: #0FB3AF;
     }
+    p {
+        margin-bottom: 2rem;
+    }
 }
 .work-container .main-box{
+    /* border: 1px solid red; */
     height: 700px;
     gap: 5px;
     padding: 5px;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 4px;
 }
 .main-box .work-left{
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 3rem;
 }
 .main-box .work-right{
     flex: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 3rem;
 }
 .main-box .box-cont{
     flex: 1;
@@ -391,7 +399,7 @@
     background-color: #3C3C3B;
     color: white;
     border-radius: 3px;
-    padding: 7px 25px;
+    padding: 13px 25px;
     border: transparent;
     cursor: pointer;
 }
@@ -399,73 +407,9 @@
     background-color: #000000fb;
 } */
 /* Div Nomber 4  */
-
-
-/* recent review responsive */
-
-
-@media screen and (max-width: 992px) {
-    .recent-review {
-      width: 95%;
-      height: auto;
-    }
-  
-    .recent-review .house-box {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .house-box .image-boxes {
-      width: 100%;
-    }
-  
-    .image-boxes .image-show img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .rating-box {
-      flex-direction: row;
-      justify-content: flex-start;
-    }
-  
-    .rating-box .rating img,
-    .rating-box .location img {
-      height: 30px;
-    }
-  
-    .view-btn {
-      width: 100%;
-      max-width: 150px;
-      font-size: 14px;
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .text-show h5 {
-      font-size: 10px;
-    }
-  
-    .rating-box {
-      gap: 5px;
-    }
-  
-    .rating-box .location img {
-      height: 35px;
-    }
-  
-    .recent-review p {
-      font-size: 14px;
-      padding: 0 10px;
-    }
-  }
-  
-
-
-
-/* .recent-review{
+.recent-review{
+    /* border: 1px solid black; */
     width: 88%;
-    height: 800px;
     margin: 0 auto;
     text-align: center;
     padding: 10px 0px;
@@ -474,10 +418,11 @@
     margin-top: 40px;
     h2{
         color: #0FB3AF;
-        margin: 0px;
+        margin-bottom: 8px;
+        font-size: 34px;
     }
     p{
-        margin: 0px;
+        margin-bottom: 2rem;
     }
 }
 .view-btn{
@@ -497,9 +442,12 @@
     background-color: black;
 }
 .recent-review .house-box{
+    /* border: 1px solid red; */
     flex: 1;
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .house-box .image-boxes{
     flex: 1;
@@ -509,9 +457,6 @@
 .house-box .image-boxes:hover{
     transform: translate(-10px, -10px);
     box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
-}
-.house-box-lower{
-    margin-top: 50px;
 }
 .image-boxes{
     display: flex;
@@ -563,6 +508,7 @@
     padding: 13px 8px;
     width: 90%;
     margin: 0 auto;
+    /* height: 1900px; */
     box-shadow: #42454748 0px 4px 14px;
     text-align: center;
     margin-bottom: 40px;
@@ -573,6 +519,9 @@
     h1{
         color: #0FB3AF;
         margin: 0;
+    }
+    p {
+        margin-bottom: 2rem;
     }
 }
 .our-articles .view-all-btn{
@@ -595,12 +544,13 @@
 }
 .big-house-fst .detail-fst{
     position: absolute;
-    width: 400px;
-    height: 180px;
-    bottom: 50px;
-    left: 650px;
+    transform: translate(-10%, -10%);
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    width: 50%;
     border-radius: 5px;
-    background-color: #ffffffa2;
+    background-color: #ffffffd4;
     color: black;
     cursor: pointer;
     padding: 10px;
@@ -670,9 +620,10 @@
 
 .keep-touch{
     width: 400px;
-    height: 160px;
+    /* height: 160px; */
     margin: 0 auto;
-    margin-top: 14px;
+    margin-bottom: 34px;
+    margin-top: 20px;
     text-align: center;
     h1{
         margin: 0;

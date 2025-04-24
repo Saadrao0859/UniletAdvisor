@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
+    <>
     <div className="Header">
       <div className="logo">
         <img src={logo} alt="" />
@@ -29,6 +30,7 @@ const Header = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 
