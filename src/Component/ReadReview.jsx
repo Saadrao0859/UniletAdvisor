@@ -126,15 +126,6 @@ const ReadReview = () => {
           );
         })}
       </div>
-      {/* <div className="next-and-back">
-        { <IoIosArrowRoundBack />}
-        <IoArrowBack />
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        { <GrFormNextLink /> }
-        <GrLinkNext />
-      </div> */}
     </div>
   );
 };
