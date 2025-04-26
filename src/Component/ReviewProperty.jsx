@@ -81,7 +81,7 @@ const ReviewProperty = () => {
             </div>
           </div>
         </div>
-        <div className="house-box house-box-lower">
+        {/* <div className="house-box house-box-lower">
           <div className="image-boxes">
             <div className="image-show">
               <img src={image12} alt="" />
@@ -130,7 +130,7 @@ const ReviewProperty = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <button className="view-btn">View All</button>
       </div>
     </div>

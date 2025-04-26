@@ -128,102 +128,102 @@ const Home = () => {
         </div>
         <button className="get-st">Get Started</button>
       </div>
-      <div className="recently-review">
+      <div className="recently-review-home">
         <h2>Recently Reviewed</h2>
         <p>More then 10000 clients who are happy with Us. Are You Next One?</p>
-        <div className="house-box">
-          <div className="image-boxes">
-            <div className="image-show">
+        <div className="house-box-home">
+          <div className="image-boxes-home">
+            <div className="image-show-home">
               <img src={image9} alt="" />
             </div>
-            <div className="text-show">
+            <div className="text-show-home">
               <h5>123 That Road Bournemouth</h5>
             </div>
-            <div className="rating-box">
-              <div className="rating">
+            <div className="rating-box-home">
+              <div className="rating-home">
                 <img src={rating} alt="" />
               </div>
-              <div className="location">
+              <div className="location-home">
                 <img src={location} alt="" />
               </div>
             </div>
           </div>
-          <div className="image-boxes">
-            <div className="image-show">
+          <div className="image-boxes-home">
+            <div className="image-show-home">
               <img src={image10} alt="" />
             </div>
-            <div className="text-show">
+            <div className="text-show-home">
               <h5>123 That Road Bournemouth</h5>
             </div>
-            <div className="rating-box">
-              <div className="rating">
+            <div className="rating-box-home">
+              <div className="rating-home">
                 <img src={rating} alt="" />
               </div>
-              <div className="location">
+              <div className="location-home">
                 <img src={location} alt="" />
               </div>
             </div>
           </div>
-          <div className="image-boxes">
-            <div className="image-show">
+          <div className="image-boxes-home">
+            <div className="image-show-home">
               <img src={image11} alt="" />
             </div>
-            <div className="text-show">
+            <div className="text-show-home">
               <h5>123 That Road Bournemouth</h5>
             </div>
-            <div className="rating-box">
-              <div className="rating">
+            <div className="rating-box-home">
+              <div className="rating-home">
                 <img src={rating} alt="" />
               </div>
-              <div className="location">
+              <div className="location-home">
                 <img src={location} alt="" />
               </div>
             </div>
           </div>
-          <div className="image-boxes">
-            <div className="image-show">
+          <div className="image-boxes-home">
+            <div className="image-show-home">
               <img src={image12} alt="" />
             </div>
-            <div className="text-show">
+            <div className="text-show-home">
               <h5>123 That Road Bournemouth</h5>
             </div>
-            <div className="rating-box">
-              <div className="rating">
+            <div className="rating-box-home">
+              <div className="rating-home">
                 <img src={rating} alt="" />
               </div>
-              <div className="location">
+              <div className="location-home">
                 <img src={location} alt="" />
               </div>
             </div>
           </div>
-          <div className="image-boxes">
-            <div className="image-show">
+          <div className="image-boxes-home">
+            <div className="image-show-home">
               <img src={image13} alt="" />
             </div>
-            <div className="text-show">
+            <div className="text-show-home">
               <h5>123 That Road Bournemouth</h5>
             </div>
-            <div className="rating-box">
-              <div className="rating">
+            <div className="rating-box-home">
+              <div className="rating-home">
                 <img src={rating} alt="" />
               </div>
-              <div className="location">
+              <div className="location-home">
                 <img src={location} alt="" />
               </div>
             </div>
           </div>
-          <div className="image-boxes">
-            <div className="image-show">
+          <div className="image-boxes-home">
+            <div className="image-show-home">
               <img src={image14} alt="" />
             </div>
-            <div className="text-show">
+            <div className="text-show-home">
               <h5>123 That Road Bournemouth</h5>
             </div>
-            <div className="rating-box">
-              <div className="rating">
+            <div className="rating-box-home">
+              <div className="rating-home">
                 <img src={rating} alt="" />
               </div>
-              <div className="location">
+              <div className="location-home">
                 <img src={location} alt="" />
               </div>
             </div>
@@ -232,13 +232,13 @@ const Home = () => {
         <button className="view-btn">View All</button>
       </div>
       <div className="our-articles">
-       <div>
-       <h1>Our Articles</h1>
-        <p>
-          See our latest news and updates for the know the new properties in
-          your area.
-        </p>
-       </div>
+        <div>
+          <h1>Our Articles</h1>
+          <p>
+            See our latest news and updates for the know the new properties in
+            your area.
+          </p>
+        </div>
         <div className="big-house big-house-fst">
           <img src={house3} alt="house" />
           <div className="detail-fst">

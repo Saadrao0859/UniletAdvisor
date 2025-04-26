@@ -1,5 +1,6 @@
 .main-containt-box{
     width: 100%;
+    min-width: 400px;
     
 }
 .banner{
@@ -18,12 +19,6 @@
     height: 400px;
 }
 
-  /* .banner {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-   */
   .banner-txt {
     position: absolute;
     top: 25%;
@@ -51,14 +46,6 @@
   }
   
   .banner-txt button {
-    /* border: none;
-    background-color: #3C3C3B;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 3px;
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: 1rem; */
     border: transparent;
     background-color: #3C3C3B;
     color: white;
@@ -75,111 +62,29 @@
   /* ✅ Responsive Adjustments */
   @media screen and (max-width: 768px) {
     .banner-txt h1 {
-      font-size: 1rem;
+      font-size: 0.6rem;
+      padding: 0px;
     }
   
     .banner-txt p {
-      font-size: 0.9rem;
+      font-size: 0.6rem;
     }
   
     .banner-txt button {
-      font-size: 0.9rem;
+      font-size: 0.6rem;
       padding: 6px 16px;
     }
   }
-  
-/* .banner-box{
-    width: 100%;
-    position: relative;
-}
-.banner-txt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    font-size: 20px;
-}
-.banner-txt h1{
-    margin: 0px;
-    text-wrap: nowrap;
-}
-.banner-txt p{
-    margin: 0px;
-}
-.banner-txt button{
-    border: transparent;
-    background-color: #3C3C3B;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.banner-txt button:hover{
-    background-color: #111111;
-} */
 
 /* accomodation css rasposive */
 
 
-.accomodation {
-    width: 90%;
-    padding: 20px 10px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .accomodation .accomo {
-    text-align: center;
-  }
-  
-  .accomo h2 {
-    color: #0FB3AF;
-    margin: 0px;
-    font-size: 1.8rem;
-  }
-  
-  .accomo p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .accomodation .accomo-box {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .accomo-box .row-box {
-    flex: 1 1 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .row-box .box img {
-    width: 80px;
-    height: auto;
-  }
-  
-  .row-box .box-sec {
-    font-size: 0.95rem;
-    padding: 0 10px;
-  }
+
   
   /* ✅ Responsive for tablets and smaller */
   @media screen and (max-width: 768px) {
     .accomodation {
-      width: 95%;
+      width: 100%;
     }
   
     .accomodation .accomo-box {
@@ -188,26 +93,24 @@
     }
   
     .accomo h2 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   
     .accomo p {
-      font-size: 0.95rem;
+      font-size: 0.8rem;
     }
   
     .row-box .box img {
-      width: 60px;
+      width: 10px;
     }
   
     .row-box .box-sec {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
   
 .accomodation{
     width: 80%;
-    min-width: 500px;
-    /* height: 300px; */
     padding: 50px 10px;
     gap: 53px;
     margin: 0 auto;
@@ -249,11 +152,11 @@
 .row-box .box-sec{
     flex: 1;
     text-align: center;
-} */
+} 
 
 .work-container {
-    background-color: #FBFBFB;
-    box-shadow: #42454748 0px 8px 24px;
+    background-color: #f7f5f5d0;
+    /* box-shadow: #42454748 0px 8px 24px; */
     width: 90%;
     margin: 0 auto;
     min-height: 820px;
@@ -337,75 +240,90 @@
     }
   }
   
+/* recent review css */
+.recently-review-home{
 
+  
 
-
-
-
-
-
-.work-container{
-    background-color: #FBFBFB;
-    /* box-shadow: #42454748 0px 8px 24px; */
-    width: 90%;
+  width: 88%;
     margin: 0 auto;
-    min-height: 820px;
-    padding: 2rem 1rem;
     text-align: center;
-    h1{
-        margin: 0;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    h2{
         color: #0FB3AF;
+        margin-bottom: 8px;
+        font-size: 34px;
     }
-    p {
+    p{
         margin-bottom: 2rem;
     }
 }
-.work-container .main-box{
-    /* border: 1px solid red; */
-    height: 700px;
-    gap: 5px;
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 4px;
+.recently-review-home .house-box-home{
+  flex: 1;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
-.main-box .work-left{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+.house-box-home .image-boxes-home{
+  flex: 1;
+  border-radius: 10px 10px 2px 2px;
+  cursor: pointer;
 }
-.main-box .work-right{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
+.house-box-home .image-boxes-home:hover{
+  transform: translate(-10px, -10px);
+  box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
 }
-.main-box .box-cont{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h2{
-        color: #0FB3AF;
-    }
+.image-boxes-home{
+  display: flex;
+  flex-direction: column;
 }
-.box-cont img{
-    width: 400px;
-    display: flex;
+.image-boxes-home .image-show-home{
+  flex: 4;
+  img{
+      border-radius: 8px 8px 0px 0px;
+      height: 208px;
+  }
 }
-.get-st{
-    background-color: #3C3C3B;
-    color: white;
-    border-radius: 3px;
-    padding: 13px 25px;
-    border: transparent;
-    cursor: pointer;
+.image-boxes-home .text-show-home{
+  margin-left: 10px;
+  flex: 0.6;
+  padding-top: 3px;
+  text-align: left;
+  h5{
+      margin: 0px;
+  }
 }
-.get-st:hover{
-    background-color: #000000fb;
-} */
+.image-boxes-home .rating-box-home{
+  margin-left: 10px;
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+.rating-box-home .rating-home{
+  flex: 1.5;
+  text-align: left;
+  img{
+      height: 33px;
+  }
+}
+.rating-box-home .location-home{
+  flex: 1;
+  max-width: 60px;
+  img{
+      height: 44px;
+     
+  }
+  
+}
+
+
+/* Don't change below css the given css work's in Review a property page */
+
 /* Div Nomber 4  */
 .recent-review{
     /* border: 1px solid black; */
@@ -441,6 +359,7 @@
 .view-btn:hover{
     background-color: black;
 }
+
 .recent-review .house-box{
     /* border: 1px solid red; */
     flex: 1;
@@ -499,7 +418,7 @@
        
     }
     
-} */
+} 
 /* our-articles css */
 
 
@@ -508,7 +427,6 @@
     padding: 13px 8px;
     width: 90%;
     margin: 0 auto;
-    /* height: 1900px; */
     box-shadow: #42454748 0px 4px 14px;
     text-align: center;
     margin-bottom: 40px;
@@ -519,20 +437,23 @@
     h1{
         color: #0FB3AF;
         margin: 0;
+
     }
     p {
         margin-bottom: 2rem;
+
     }
 }
 .our-articles .view-all-btn{
     padding: 8px ;
     width: 120px;
-    background-color: #3C3C3B;
+    background-color: #6b6b6a;
     color: white;
     border-radius: 4px;
     margin-top: 20px;
     border: transparent;
     cursor: pointer;
+    align-items: center;
 }
 .our-articles .view-all-btn:hover{
     background-color: #020202;
@@ -564,10 +485,11 @@
         margin-bottom: 5px;
     }
 }
-.big-house-fst .detail-fst:hover{
-    transform: translate(-10px, -10px);
-    box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
-}
+
+/* .big-house-fst .detail-fst:hover{
+    transform: translate(-50px, -50px);
+    box-shadow: #32325d40 0px 50px 100px 20px, #0000004d 0px 30px 60px -30px;
+} */
 .detail-fst .person-details{
     display: flex;
     justify-content: space-between;
@@ -599,6 +521,57 @@
 }
 .issue-date .date{
     font-size: small;
+}
+/* responsive of our articales */
+@media screen and (max-width: 768px){
+  .big-house{
+    position: relative;
+
+  }
+  .detail-fst{
+    width: 30%;
+    transform: translate(-10%, -10%);
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    width: 50%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #ffffffd4;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+    h5{
+      font-size: 10px;
+      padding: 0;
+    }
+    p{
+      font-size: 10px;
+      padding: 0;
+    }
+  }
+  .detail-fst .person-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+  }
+  .image-person .image-box{
+    width: 15px;
+  }
+  .person-details .issue-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 7px;
+  }
+  .issue-date .date{
+    font-size: 7px;
+  }
+  .person-details .name-person{
+    font-size: 6px;
+  }
+  
 }
 .read-more .readbtn{
     padding: 5px 15px;
