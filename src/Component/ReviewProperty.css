@@ -1,13 +1,16 @@
+.container-Review-property{
+    min-height: 400px;
+}
 .image-fst{
     img{
         width: 100%;
     }
     position: relative;
 }
+
 .street-address{
-    /* border: 1px solid black; */
     width: 60%;
-    height: 180px;
+    /* height: 180px; */
     position: absolute;
     top: 228px;
     left: 242px;
@@ -19,16 +22,47 @@
         margin-bottom: 10px;
     }
 }
+@media only screen and (max-width: 768px){
+    .street-address{
+        width: 60%;
+        position: absolute;
+        top: 189px;
+        left: 75px;
+        text-align: center;
+    }
+   .street-address h1 {
+        font-size: 12px;
+        padding: 0px;
+    }
+    .street-address p{
+        padding:0px 0px 10px 0px;
+        margin: 0px;
+        font-size: 12px;
+    }
+    .street-address .search-address{
+        margin: 0px;
+        font-size: 12px;
+    }
+    .street-address .search-address input{
+        width: 50%;
+        padding: 1px;
+        font-size: 12px;
+    }
+    .street-address .search-address .srchbtn{
+        padding: 0px 5px;
+        font-size: 12px;
+    }
+}
 .search-address{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
     p{
         margin-top: 5px;
         font-size: smaller;
         margin-right: 8px;
     }
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
     input{
         width: 40%;
         padding: 6px;
@@ -48,13 +82,13 @@
     }
 }
 
-
+@media only screen and (max-width: 768px){
+    .image-fst{
+        width: 100%;
+    }
+}
 /* our review css */
-
-
-
 .recent-review{
-    /* border: 1px solid black; */
     width: 88%;
     margin: 0 auto;
     text-align: center;
@@ -62,14 +96,13 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    margin-bottom: 50px;
-    /* gap: 50px; */
     h2{
         color: #0FB3AF;
-        margin: 0px;
+        margin-bottom: 8px;
+        font-size: 34px;
     }
     p{
-        margin: 0px;
+        margin-bottom: 2rem;
     }
 }
 .view-btn{
@@ -88,41 +121,35 @@
 .view-btn:hover{
     background-color: black;
 }
+
 .recent-review .house-box{
-    /* border: 1px solid red; */
     flex: 1;
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .house-box .image-boxes{
-    /* border: 1px solid black; */
     flex: 1;
     border-radius: 10px 10px 2px 2px;
-    /* box-shadow: #00000040 0px 1px 10px, #00000038 0px 5px 10px; */
     cursor: pointer;
 }
 .house-box .image-boxes:hover{
     transform: translate(-10px, -10px);
     box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
 }
-.house-box-lower{
-    margin-top: 50px;
-}
 .image-boxes{
     display: flex;
     flex-direction: column;
 }
 .image-boxes .image-show{
-    /* border: 1px solid green; */
     flex: 4;
-    /* height: 160px; */
     img{
         border-radius: 8px 8px 0px 0px;
         height: 208px;
     }
 }
 .image-boxes .text-show{
-    /* border: 1px solid #802900; */
     margin-left: 10px;
     flex: 0.6;
     padding-top: 3px;
@@ -132,14 +159,12 @@
     }
 }
 .image-boxes .rating-box{
-    /* border: 1px solid #f200ff; */
     margin-left: 10px;
     flex: 1;
     display: flex;
     gap: 10px;
 }
 .rating-box .rating{
-    /* border: 1px solid red; */
     flex: 1.5;
     text-align: left;
     img{
@@ -147,11 +172,50 @@
     }
 }
 .rating-box .location{
-    /* border: 1px solid green; */
     flex: 1;
     max-width: 60px;
     img{
         height: 44px;
        
+    }
+    
+} 
+
+
+
+@media (max-width: 768px) {
+    .recent-review h2 {
+        font-size: 28px;
+    }
+
+    .house-box .image-boxes {
+        flex: 1 1 45%;
+    }
+
+    .image-boxes .image-show img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recent-review h2 {
+        font-size: 22px;
+    }
+    .recent-review p{
+        font-size: 12px;
+    }
+
+    .house-box .image-boxes {
+        flex: 1 1 100%;
+    }
+
+    .image-boxes .image-show img {
+        height: 160px;
+    }
+
+    .view-btn {
+        width: 80px;
+        padding: 5px 8px;
+        font-size: 14px;
     }
 }
