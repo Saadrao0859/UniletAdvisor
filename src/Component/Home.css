@@ -478,7 +478,16 @@
   .person-details .name-person{
     font-size: 6px;
   }
-  
+  .detail-fst h5{
+    padding: 0px;
+  }
+  .detail-fst p{
+    margin: 0px;
+    padding: 0px;
+  }
+  .person-details .readbtn{
+   font-size: 10px; 
+  }
 }
 .read-more .readbtn{
     padding: 5px 15px;

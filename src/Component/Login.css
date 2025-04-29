@@ -68,3 +68,48 @@
 .signupbutton:hover{
     color: #0FB3AF;
 }
+
+@media (max-width: 768px) {
+    .text-login-banner {
+        width: 80%;
+        left: 10%;
+        top: 15%;
+        height: auto;
+        h1{
+            font-size: 20px;
+            padding: 0px;
+        }
+    }
+
+    .login-main-container .login-box-input {
+        width: 80%;
+    }
+
+    .bottem-border {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-login-banner {
+        width: 90%;
+        left: 5%;
+        top: 10%;
+        font-size: smaller;
+    }
+
+    .login-main-container .login-box-input {
+        width: 90%;
+    }
+
+    .singupBtn,
+    .signupbutton {
+        font-size: medium;
+    }
+
+    .forget-remember {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
