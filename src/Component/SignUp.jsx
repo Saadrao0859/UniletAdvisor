@@ -4,8 +4,28 @@ import signupbanner from "../assets/images/Signup/banner-signup.jpg";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
 
 const SignUp = () => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [conformPassword, setConfromPassword] = useState();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:3001/signup", {
+        name,
+        email,
+        password,
+        conformPassword,
+      })
+      .then((result) => console.log(result))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="signup-container">
       <div className="banner-image-signup">
@@ -18,32 +38,45 @@ const SignUp = () => {
 
       <div className="signup-box">
         <h1>Sign up Now</h1>
-        <TextField
-          className="inout-email"
-          id="outlined-basic"
-          label="Email"
-          variant="outlined"
-          placeholder="Enter Your email address here"
-        />
-        <TextField
-          className="password-input"
-          id="outlined-password-input"
-          label="Password"
-          type="password"
-          autoComplete="current-password"
-          placeholder="Enter Your password here"
-        />
-        <TextField
-          className="password-input"
-          id="outlined-password-input"
-          label="Conform password"
-          type="password"
-          autoComplete="current-password"
-          placeholder="Conform password"
-        />
-        <Button className="btn-submit" variant="contained">
-          Submit
-        </Button>
+        <form className="signup-form" onSubmit={handleSubmit}>
+          <TextField
+            className="inout-email"
+            id="outlined-basic"
+            label="Name"
+            variant="outlined"
+            placeholder="Enter Your name here"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <TextField
+            className="inout-email"
+            id="outlined-basic"
+            label="Email"
+            variant="outlined"
+            placeholder="Enter Your email address here"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <TextField
+            className="password-input"
+            id="outlined-password-input"
+            label="Password"
+            type="password"
+            autoComplete="current-password"
+            placeholder="Enter Your password here"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <TextField
+            className="password-input"
+            id="outlined-password-input"
+            label="Conform password"
+            type="password"
+            autoComplete="current-password"
+            placeholder="Conform password"
+            onChange={(e) => setConfromPassword(e.target.value)}
+          />
+          <Button className="btn-submit" variant="contained">
+            Submit
+          </Button>
+        </form>
         <hr className="bottem-border" />
       </div>
       <p className="singupBtn">

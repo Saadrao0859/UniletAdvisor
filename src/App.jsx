@@ -10,7 +10,7 @@ import Footer from "./Component/Footer";
 import Login from "./Component/Login";
 import ArticlesDetailPage from "./Component/ArticlesDetailPage";
 import PropertyDetails from "./Component/PropertyDetails";
-import SignUp from "./Component/signup";
+import SignUp from "./Component/SignUp";
 const App = () => {
   return (
     <Router>
