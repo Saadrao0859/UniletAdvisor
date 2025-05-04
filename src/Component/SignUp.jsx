@@ -6,12 +6,14 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [conformPassword, setConfromPassword] = useState();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +24,10 @@ const SignUp = () => {
         password,
         conformPassword,
       })
-      .then((result) => console.log(result))
+      .then((result) => {
+        console.log(result);
+        navigate("/login");
+      })
       .catch((err) => console.log(err));
   };
 

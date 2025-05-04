@@ -78,7 +78,7 @@
         }
     }
     .signup-box{
-        max-width: 100%;
+        max-width: 80%;
     }
 }
 @media screen and (min-width: 720px){
@@ -94,6 +94,9 @@
         }
     }
     .signup-box{
-        max-width: 100%;
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+
     }
 }
