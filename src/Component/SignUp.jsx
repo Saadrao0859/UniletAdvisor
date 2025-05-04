@@ -41,7 +41,7 @@ const SignUp = () => {
         <form className="signup-form" onSubmit={handleSubmit}>
           <TextField
             className="inout-email"
-            id="outlined-basic"
+            id="name-input"
             label="Name"
             variant="outlined"
             placeholder="Enter Your name here"
@@ -49,7 +49,7 @@ const SignUp = () => {
           />
           <TextField
             className="inout-email"
-            id="outlined-basic"
+            id="email-input"
             label="Email"
             variant="outlined"
             placeholder="Enter Your email address here"
@@ -57,7 +57,7 @@ const SignUp = () => {
           />
           <TextField
             className="password-input"
-            id="outlined-password-input"
+            id="password-input"
             label="Password"
             type="password"
             autoComplete="current-password"
@@ -66,25 +66,25 @@ const SignUp = () => {
           />
           <TextField
             className="password-input"
-            id="outlined-password-input"
+            id="confirm-password-input"
             label="Conform password"
             type="password"
             autoComplete="current-password"
             placeholder="Conform password"
             onChange={(e) => setConfromPassword(e.target.value)}
           />
-          <Button className="btn-submit" variant="contained">
+          <Button className="btn-submit" type="submit" variant="contained">
             Submit
           </Button>
         </form>
         <hr className="bottem-border" />
       </div>
-      <p className="singupBtn">
-        Don't Have an account?
+      <div className="signup-button-p-tag">
+        <p className="singupBtn">Don't Have an account?</p>
         <Link to="/login">
           <button className="signupbutton">Sign in</button>
         </Link>
-      </p>
+      </div>
     </div>
   );
 };

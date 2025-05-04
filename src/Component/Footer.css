@@ -7,7 +7,7 @@
     text-align: center;
     background-color: #e7e5e59b;
     padding: 10px;
-    min-width: 400px;
+    min-width: 320px;
 }
 .footer{
     display: flex;
@@ -107,4 +107,5 @@ h3{
       max-width: 100%;
     }
   }
+  
   

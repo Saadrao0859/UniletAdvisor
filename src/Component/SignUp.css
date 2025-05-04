@@ -59,3 +59,41 @@
         width: 90%;
     }
 }
+.signup-button-p-tag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 720px){
+    .txt-signup {
+      position: absolute;
+      top: 0%;
+      left: 33%;
+        h1{
+            font-size: 13px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+    .signup-box{
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 720px){
+    .txt-signup {
+      position: absolute;
+      top: 5%;
+      left: 33%;
+        h1{
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .signup-box{
+        max-width: 100%;
+    }
+}
