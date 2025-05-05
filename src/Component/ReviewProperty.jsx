@@ -9,7 +9,7 @@ import image13 from "../assets/images/ReviewsRecent/image 13.jpg";
 import image14 from "../assets/images/ReviewsRecent/image 14.jpg";
 import rating from "../assets/images/ReviewsRecent/rating.svg";
 import location from "../assets/images/ReviewsRecent/arrow.svg";
-
+import { Link } from "react-router-dom";
 const ReviewProperty = () => {
   return (
     <div className="container-Review-property">
@@ -131,7 +131,9 @@ const ReviewProperty = () => {
             </div>
           </div>
         </div> */}
-        <button className="view-btn">View All</button>
+        <Link to={"/readreview"}>
+          <button className="view-btn">View All</button>
+        </Link>
       </div>
     </div>
   );

@@ -22,6 +22,7 @@ import house3 from "../assets/images/House images/house3.jpg";
 import clock from "../assets/images/House images/Group 58.png";
 import logoimg1 from "../assets/images/House images/logoimg.png";
 import logoimg2 from "../assets/images/House images/logoimg2.png";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [email, setEmail] = useState("");
   return (
@@ -31,7 +32,9 @@ const Home = () => {
         <div className="banner-txt">
           <h1>Share Your Student Renting Experince</h1>
           <p>Help other students make the right rental choice</p>
-          <button className="search-btn">Search Now</button>
+          <Link to={"/readreview"}>
+            <button className="search-btn">Search Now</button>
+          </Link>
         </div>
       </div>
       <div className="accomodation">
@@ -126,7 +129,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <button className="get-st">Get Started</button>
+        <Link to={"/home"}>
+          <button className="get-st">Get Started</button>
+        </Link>
       </div>
       <div className="recently-review-home">
         <h2>Recently Reviewed</h2>
@@ -229,7 +234,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <button className="view-btn">View All</button>
+        <Link to={"/readreview"}>
+          <button className="view-btn">View All</button>
+        </Link>
       </div>
       <div className="our-articles">
         <div>
@@ -318,12 +325,16 @@ const Home = () => {
                 <div className="date">16,Oct 2024, 09:48:00</div>
               </div>
               <div className="read-more">
-                <button className="readbtn">Read More</button>
+                <Link to={"/ArticlesDetailPage/1"}>
+                  <button className="readbtn">Read More</button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-        <button className="view-all-btn">View All</button>
+        <Link to={"/articles"}>
+          <button className="view-all-btn">View All</button>
+        </Link>
       </div>
       <div className="keep-touch">
         <h1>Let's keep in touch</h1>
