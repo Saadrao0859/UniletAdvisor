@@ -11,9 +11,11 @@ import Login from "./Component/Login";
 import ArticlesDetailPage from "./Component/ArticlesDetailPage";
 import PropertyDetails from "./Component/PropertyDetails";
 import SignUp from "./Component/SignUp";
+import Scrolltotop from "./Component/Scrolltotop";
 const App = () => {
   return (
     <Router>
+      <Scrolltotop />
       <div className="main-box">
         <Header />
         <div className="main-contant">
