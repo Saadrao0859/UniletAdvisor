@@ -19,14 +19,6 @@ const ReviewProperty = () => {
       <div className="street-address">
         <h1>Review a property that you've lived in</h1>
         <p>(or still living in)</p>
-        <div className="search-address">
-          <p>Street Address :</p>
-          <input
-            type="text"
-            placeholder="Start typing the address of the property"
-          />
-          <button className="srchbtn">Search</button>
-        </div>
       </div>
       <div className="recent-review">
         <h2>Recently Reviewed</h2>
@@ -81,56 +73,6 @@ const ReviewProperty = () => {
             </div>
           </div>
         </div>
-        {/* <div className="house-box house-box-lower">
-          <div className="image-boxes">
-            <div className="image-show">
-              <img src={image12} alt="" />
-            </div>
-            <div className="text-show">
-              <h5>123 That Road Bournemouth</h5>
-            </div>
-            <div className="rating-box">
-              <div className="rating">
-                <img src={rating} alt="" />
-              </div>
-              <div className="location">
-                <img src={location} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="image-boxes">
-            <div className="image-show">
-              <img src={image13} alt="" />
-            </div>
-            <div className="text-show">
-              <h5>123 That Road Bournemouth</h5>
-            </div>
-            <div className="rating-box">
-              <div className="rating">
-                <img src={rating} alt="" />
-              </div>
-              <div className="location">
-                <img src={location} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="image-boxes">
-            <div className="image-show">
-              <img src={image14} alt="" />
-            </div>
-            <div className="text-show">
-              <h5>123 That Road Bournemouth</h5>
-            </div>
-            <div className="rating-box">
-              <div className="rating">
-                <img src={rating} alt="" />
-              </div>
-              <div className="location">
-                <img src={location} alt="" />
-              </div>
-            </div>
-          </div>
-        </div> */}
         <Link to={"/readreview"}>
           <button className="view-btn">View All</button>
         </Link>

@@ -12,6 +12,7 @@ import ArticlesDetailPage from "./Component/ArticlesDetailPage";
 import PropertyDetails from "./Component/PropertyDetails";
 import SignUp from "./Component/SignUp";
 import Scrolltotop from "./Component/Scrolltotop";
+import TawkToWidget from "./Component/TawkToWidget";
 const App = () => {
   return (
     <Router>
@@ -36,6 +37,7 @@ const App = () => {
           </Routes>
         </div>
         <Footer />
+        <TawkToWidget />
       </div>
     </Router>
   );
